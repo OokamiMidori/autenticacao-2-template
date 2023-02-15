@@ -1,14 +1,16 @@
 import { ProductModel } from "../types";
 
 export interface GetProductsInput {
-    q: unknown
+    q: unknown,
+    token: string | undefined
 }
 
 export type GetProductsOutput = ProductModel[]
 
 export interface CreateProductInput {
     name: unknown,
-    price: unknown
+    price: unknown,
+    token: string | undefined
 }
 
 export interface CreateProductOutput {
